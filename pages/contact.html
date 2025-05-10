@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--
+  Sitio desarrollado por: Nicolás Lastra
+  GitHub: https://github.com/Nicolas-Lastra/
+  Correo profesional: nicolas.lastra.inzunza@gmail.com
+  Ubicación: Villa Amengual, Lago Verde, Región de Aysén, Chile
+  Año: 2025
+
+  Proyecto: Sitio web para cafetería Aroma Austral
+-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Contáctanos y planifica tu visita a nuestra cafetería en la Región de Aysén, Chile. Estamos ubicados en Villa Amengual, punto clave en la Patagonia.">
+    <meta name="keywords" content="contacto aroma austral, contacto cafetería Villa Amengual, ubicación café Patagonia, cómo llegar Lago Verde, contacto café Chile, información cafetería turística">
+    <meta name="author" content="Aroma Austral Café">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Contacto Aroma Austral - Café de especialidad en Villa Amengual, Aysén">
+    <meta property="og:description"
+        content="¿Quieres hacer un pedido especial o tienes dudas? Contáctanos y te responderemos lo antes posible.">
+    <meta property="og:image" content="https://aromaaustral.cl/img/og-aroma-austral.webp">
+    <meta property="og:url" content="https://aromaaustral.cl/pages/contact.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google Fonts: Optimizado -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Prata&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet" media="print"
+        onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    </noscript>
+
+    <!-- Imagen de fondo -->
+    <link rel="preload" as="image" href="../img/fondo-grano-cafe.webp" type="image/webp">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Contacto | Aroma Austral Café</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark main-navbar py-0">
+            <div class="container-fluid">
+                <a href="../index.html" class="navbar-brand main-navbar__brand">
+                    <img src="../icons/logo-marca.webp" loading="lazy" alt="Logo Marca" width="60">
+                </a>
+                <button class="navbar-toggler main-navbar__toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#main-navbar__options" aria-controls="main-navbar__options" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse main-navbar__options" id="main-navbar__options">
+                <div class="navbar-nav ms-auto text-end pe-3">
+                    <a class="nav-link main-navbar__link active" aria-current="Inicio" href="../index.html">Inicio</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Menú" href="menu.html">Menú</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Nosotros" href="us.html">Nosotros</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Galería" href="gallery.html">Galería</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Contacto"
+                        href="contact.html">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid text-light d-flex flex-column my-main main-contact pe-4 ps-4 position-relative">
+
+        <!-- Imagen de fondo -->
+        <picture class="position-absolute top-0 start-0 w-100 h-100 z-n1">
+            <source srcset="../img/fondo-grano-cafe-mobile.webp" media="(max-width: 576px)" type="image/webp">
+            <source srcset="../img/fondo-grano-cafe.webp" media="(min-width: 577px)" type="image/webp">
+            <img src="../img/fondo-grano-cafe.webp" alt="" aria-hidden="true" class="w-100 h-100 object-fit-cover"
+                loading="eager" decoding="async">
+        </picture>
+
+        <h1 class="mb-4">Contáctanos</h1>
+        <p>¿Tienes dudas, sugerencias o deseas hacer un pedido especial? Envíanos un mensaje y te responderemos lo antes
+            posible.</p>
+
+        <form class="row g-3 needs-validation" novalidate id="contact-form" method="POST" action="https://formspree.io/f/mgvadvzb">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
+                <div class="invalid-feedback">
+                    Por favor ingresa tu nombre.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" class="form-control"
+                    required>
+                <div class="invalid-feedback">
+                    Ingresa un correo válido.
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" name="message" rows="5"
+                    placeholder="Escríbenos tu consulta..." required></textarea>
+                <div class="invalid-feedback">
+                    No olvides escribir tu mensaje.
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <button class="btn btn-outline-light" type="submit">Enviar mensaje</button>
+            </div>
+        </form>
+        
+        <section id="ubicacion-cafeteria" class="cafeteria-location mt-5">
+            <h2 class="cafeteria-location__title">¿Cómo llegar a nuestra cafetería?</h2>
+
+            <p class="cafeteria-location__description">
+                Nuestra cafetería está ubicada en <strong>Villa Amengual</strong>, una pintoresca localidad de la comuna
+                de Lago Verde en la Región de Aysén.
+                Aunque Lago Verde posee una geografía particular que separa su centro de muchas localidades, Villa
+                Amengual es fácilmente accesible.
+                Este lugar se sitúa estratégicamente entre <strong>Villa Mañihuales</strong>, <strong>Puerto
+                    Cisnes</strong> y <strong>Puyuhuapi</strong>,
+                siendo un punto ideal para detenerse a descansar y disfrutar de un buen café en medio de la ruta
+                patagónica.
+            </p>
+
+            <h3 class="cafeteria-location__subtitle">Formas de llegar</h3>
+            <ul class="cafeteria-location__routes">
+                <li>
+                    <strong>Desde el sur:</strong> Puedes tomar un vuelo hasta <em>Aeropuerto Balmaceda</em>,
+                    viajar por tierra hasta <strong>Coyhaique</strong> y continuar por la <strong>Carretera
+                        Austral</strong> hacia el norte.
+                </li>
+                <li>
+                    <strong>Desde el norte:</strong> Accede por la <strong>Ruta Bimodal</strong> desde
+                    <em>Hornopirén</em> a través de barcazas,
+                    viajando hacia el sur por la Carretera Austral, atravesando <strong>Puyuhuapi</strong> y la
+                    <strong>Reserva Nacional Queulat</strong>.
+                </li>
+                <li>
+                    <strong>Desde Chiloé:</strong> Puedes tomar una barcaza desde <strong>Quellón</strong> hacia
+                    <strong>Puerto Cisnes</strong>,
+                    y desde ahí seguir por tierra hasta conectar con la <strong>Ruta 7</strong> en dirección sur.
+                </li>
+            </ul>
+
+            <div class="cafeteria-location__map-wrapper mt-4">
+                <iframe class="cafeteria-location__map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.565825320732!2d-72.21380692463963!3d-44.74887396125989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdf4833766288069%3A0x935a0276258ad163!2sAroma%20Austral%20Caf%C3%A9!5e0!3m2!1ses-419!2scl!4v1746802601585!5m2!1ses-419!2scl"
+                    width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa ubicación Aroma Austral Café, Villa Amengual">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal de confirmación -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content text-dark">
+            <div class="modal-header">
+              <h5 class="modal-title" id="successModalLabel">Formulario enviado</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              Tu mensaje ha sido enviado correctamente.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer>
+
+        <div class="footer-container container-fluid text-center py-3 justify-content-center">
+
+            <div class="row">
+                <!-- Información de contacto -->
+                <div class="footer-container__contact col-sm-12 col-md-4">
+                    <p>
+                        <a href="https://maps.app.goo.gl/2fDmWmGi7mYL5KEs9" target="_blank" rel="noopener noreferrer"
+                            class="text-decoration-none text-reset d-inline-flex align-items-center">
+                            <img src="../icons/map-pin.svg" loading="lazy" alt="Ubicación"
+                                style="width: 20px; margin-right: 3px;">
+                            Carmen Arias 18, Villa Amengual, Lago Verde.
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Texto y derechos de autor -->
+                <div class="footer-container__text col-sm-12 col-md-4">
+                    <p>&copy; 2025 Aroma Austral Café. Todos los derechos reservados.</p>
+
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="footer-container__social col-sm-12 col-md-4">
+                    <a href="https://www.facebook.com/aromaaustralcafeteria/" target="_blank">
+                        <img src="../icons/brand-facebook.svg" loading="lazy" alt="Facebook"
+                            class="footer-container__social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/aromaaustral.cafe/" target="_blank">
+                        <img src="../icons/brand-instagram.svg" loading="lazy" alt="Instagram"
+                            class="footer-container__social-icon">
+                    </a>
+                    <a href="https://www.tiktok.com/@aromaaustral.cafe" target="_blank">
+                        <img src="../icons/brand-tiktok.svg" alt="TikTok" loading="lazy"
+                            class="footer-container__social-icon">
+                    </a>
+                    <a href="https://wa.me/56971651085" target="_blank">
+                        <img src="../icons/brand-whatsapp.svg" alt="WhatsApp" loading="lazy"
+                            class="footer-container__social-icon">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/contact-form.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

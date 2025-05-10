@@ -1,0 +1,26 @@
+/* =====================================================
+   Autor del desarrollo Front End y estilos: Nicolás Lastra
+   GitHub: https://github.com/Nicolas-Lastra/
+   Correo: nicolas.lastra.inzunza@gmail.com
+   Ubicación: Villa Amengual, Lago Verde, Región de Aysén, Chile
+   Año: 2025
+
+   Proyecto: Sitio web para cafetería Aroma Austral
+   Notas: Este archivo contiene los estilos base del sitio.
+===================================================== */
+
+//Base
+@use "base/reset";
+@use "base/typography";
+
+//Layout
+@use "layout/main";
+@use "layout/header";
+@use "layout/footer";
+
+//Pages
+@use "pages/contact";
+@use "pages/gallery";
+@use "pages/index";
+@use "pages/menu";
+@use "pages/us";

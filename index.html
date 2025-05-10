@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--
+  Sitio desarrollado por: Nicolás Lastra
+  GitHub: https://github.com/Nicolas-Lastra/
+  Correo profesional: nicolas.lastra.inzunza@gmail.com
+  Ubicación: Villa Amengual, Lago Verde, Región de Aysén, Chile
+  Año: 2025
+
+  Proyecto: Sitio web para cafetería Aroma Austral
+-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- AUTOR -->
+    <link rel="author" href="humans.txt" />
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Descubre nuestra acogedora cafetería en Villa Amengual, Aysén, Patagonia chilena. Un rincón perfecto para turistas y locales que buscan café de especialidad, productos caseros y paisajes inolvidables.">
+    <meta name="author" content="Aroma Austral Café">
+    <meta name="keywords"
+        content="Aroma Austral, Villa Amengual, Patagonia, Aysén, cafetería Patagonia, cafetería Lago Verde, cafetería Aysén, café Villa Amengual, cafetería Villa Amengual, Lago Verde, café artesanal, turismo Patagonia, café especialidad Chile, cafetería turística">
+
+    <title>Cafetería Aroma Austral | Villa Amengual, Aysén</title>
+    <link rel="canonical" href="https://aromaaustral.cl/" />
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Aroma Austral - Café de especialidad en Villa Amengual, Aysén">
+    <meta property="og:description"
+        content="Cafetería de especialidad en Villa Amengual, Lago Verde - Aysén, con dulces y preparaciones artesanales.">
+    <meta property="og:image" content="https://aromaaustral.cl/img/og-aroma-austral.webp">
+    <meta property="og:url" content="https://aromaaustral.cl/">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <!-- Google Fonts: Optimizado -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Prata&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet" media="print"
+        onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    </noscript>
+
+    <!-- Imagen de fondo -->
+    <link rel="preload" as="image" href="img/fondo-grano-cafe.webp" type="image/webp">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark main-navbar py-0">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand main-navbar__brand">
+                    <img src="icons/logo-marca.webp" alt="Logo Aroma Austral" aria-label="Logo Aroma Austral"
+                        width="60">
+                </a>
+                <button class="navbar-toggler main-navbar__toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#main-navbar__options" aria-controls="main-navbar__options" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse main-navbar__options" id="main-navbar__options">
+                <div class="navbar-nav ms-auto text-end pe-3">
+                    <a class="nav-link main-navbar__link active" aria-current="Inicio" href="index.html">Inicio</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Menú" href="pages/menu.html">Menú</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Nosotros"
+                        href="pages/us.html">Nosotros</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Galería"
+                        href="pages/gallery.html">Galería</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Contacto"
+                        href="pages/contact.html">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid text-light d-flex flex-column my-main my-main--index pe-4 ps-4 position-relative">
+
+        <!-- Imagen de fondo -->
+        <picture class="position-absolute top-0 start-0 w-100 h-100 z-n1">
+            <source srcset="img/fondo-grano-cafe-mobile.webp" media="(max-width: 576px)" type="image/webp">
+            <source srcset="img/fondo-grano-cafe.webp" media="(min-width: 577px)" type="image/webp">
+            <img src="img/fondo-grano-cafe.webp" alt="" aria-hidden="true" class="w-100 h-100 object-fit-cover"
+                loading="eager" decoding="async">
+        </picture>
+
+        <h1 id="my-main__h1">Cafetería Aroma Austral</h1>
+        <p>Si no sabes por donde empezar... ¡empieza con un buen café!</p>
+        <!-- <img src="img/capuccino-sin-fondo.webp" alt="Capuccino" class="my-main__main-image"> -->
+        <img src="img/capuccino-sin-fondo.webp" alt="Capuccino" class="my-main__main-image" width="400" height="400"
+            fetchpriority="high" decoding="async">
+
+        <p>En nuestro menú puedes encontrar café de especialidad, tartas, selladitos y más. <a
+                class="text-decoration-underline text-light" href="pages/menu.html">Explora nuestro menú de cafés y
+                especialidades locales</a>.
+        </p>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-container container-fluid text-center py-3 justify-content-center">
+
+            <div class="row">
+                <!-- Información de contacto -->
+                <div class="footer-container__contact col-sm-12 col-md-4">
+                    <p>
+                        <a href="https://maps.app.goo.gl/2fDmWmGi7mYL5KEs9" target="_blank" rel="noopener noreferrer"
+                            class="text-decoration-none text-reset d-inline-flex align-items-center">
+                            <img src="icons/map-pin.svg" alt="Ubicación" style="width: 20px; margin-right: 3px;">
+                            Carmen Arias 18, Villa Amengual, Lago Verde.
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Texto y derechos de autor -->
+                <div class="footer-container__text col-sm-12 col-md-4">
+                    <p>&copy; 2025 Aroma Austral Café. Todos los derechos reservados.</p>
+
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="footer-container__social col-sm-12 col-md-4">
+                    <a href="https://www.facebook.com/aromaaustralcafeteria/" target="_blank">
+                        <img src="icons/brand-facebook.svg" alt="Facebook" class="footer-container__social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/aromaaustral.cafe/" target="_blank">
+                        <img src="icons/brand-instagram.svg" alt="Instagram" class="footer-container__social-icon">
+                    </a>
+                    <a href="https://www.tiktok.com/@aromaaustral.cafe" target="_blank">
+                        <img src="icons/brand-tiktok.svg" alt="TikTok" class="footer-container__social-icon">
+                    </a>
+                    <a href="https://wa.me/56971651085" target="_blank">
+                        <img src="icons/brand-whatsapp.svg" alt="WhatsApp" class="footer-container__social-icon">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--
+  Sitio desarrollado por: Nicolás Lastra
+  GitHub: https://github.com/Nicolas-Lastra/
+  Correo profesional: nicolas.lastra.inzunza@gmail.com
+  Ubicación: Villa Amengual, Lago Verde, Región de Aysén, Chile
+  Año: 2025
+
+  Proyecto: Sitio web para cafetería Aroma Austral
+-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Explora nuestra galería de Aroma Austral Café: fotografías auténticas de nuestra cafetería, postres, café de especialidad y ambiente acogedor en Villa Amengual.">
+    <meta name="author" content="Aroma Austral Café">
+    <meta name="keywords"
+        content="galería cafetería Patagonia, fotos café Villa Amengual, turismo visual Aysén, café con vista, paisajes cafetería Chile">
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Galería Aroma Austral - Café de especialidad en Villa Amengual, Aysén">
+    <meta property="og:description"
+        content="Explora nuestra galería de imágenes y sumérgete en la experiencia visual de nuestra cafetería en la Patagonia chilena.">
+    <meta property="og:image" content="https://aromaaustral.cl/img/og-aroma-austral.webp">
+    <meta property="og:url" content="https://aromaaustral.cl/pages/gallery.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google Fonts: Optimizado -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Prata&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet" media="print"
+        onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    </noscript>
+
+    <!-- Imagen de fondo -->
+    <link rel="preload" as="image" href="../img/fondo-grano-cafe.webp" type="image/webp">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Galería | Aroma Austral Café</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark main-navbar py-0">
+            <div class="container-fluid">
+                <a href="../index.html" class="navbar-brand main-navbar__brand">
+                    <img src="../icons/logo-marca.webp" loading="lazy" alt="Logo Marca" width="60">
+                </a>
+                <button class="navbar-toggler main-navbar__toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#main-navbar__options" aria-controls="main-navbar__options" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse main-navbar__options" id="main-navbar__options">
+                <div class="navbar-nav ms-auto text-end pe-3">
+                    <a class="nav-link main-navbar__link active" aria-current="Inicio" href="../index.html">Inicio</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Menú" href="menu.html">Menú</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Nosotros" href="us.html">Nosotros</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Galería" href="gallery.html">Galería</a>
+                    <a class="nav-link main-navbar__link active" aria-current="Contacto"
+                        href="contact.html">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid text-light d-flex flex-column my-main pe-4 ps-4 position-relative">
+
+        <!-- Imagen de fondo -->
+        <picture class="position-absolute top-0 start-0 w-100 h-100 z-n1">
+            <source srcset="../img/fondo-grano-cafe-mobile.webp" media="(max-width: 576px)" type="image/webp">
+            <source srcset="../img/fondo-grano-cafe.webp" media="(min-width: 577px)" type="image/webp">
+            <img src="../img/fondo-grano-cafe.webp" alt="" aria-hidden="true" class="w-100 h-100 object-fit-cover"
+                loading="eager" decoding="async">
+        </picture>
+
+        <!-- Contenido Galería -->
+        <section class="container">
+            <h1 class="text-center mb-4">Galería Aroma Austral</h1>
+            <p class="text-center mb-5 lead">
+                Capturamos momentos únicos en nuestra cafetería. Disfruta estas postales de la Patagonia y nuestro café
+                de especialidad.
+            </p>
+
+            <!-- Galería de Imágenes Verticales -->
+            <div class="row g-4 mb-5">
+
+                <!-- Imagen 1 -->
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card bg-dark border-0 shadow-sm">
+                        <img src="../img/galeria/interior-capuccino.webp" loading="lazy" class="gallery-img-fixed"
+                            aria-label="Capuccino recién servido en la barra" alt="Capuccino recién servido en la barra"
+                            data-bs-toggle="modal" data-bs-target="#modalImg1" style="cursor: pointer;">
+                    </div>
+                </div>
+
+                <!-- Imagen 2 -->
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card bg-dark border-0 shadow-sm">
+                        <img src="../img/galeria/interior-tarta.webp" loading="lazy" class="gallery-img-fixed" aria-label="Trozo de tarta del día recién servido"
+                            alt="Trozo de tarta del día recién servido" data-bs-toggle="modal"
+                            data-bs-target="#modalImg2" style="cursor: pointer;">
+                    </div>
+                </div>
+
+                <!-- Imagen 3 -->
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card bg-dark border-0 shadow-sm">
+                        <img src="../img/galeria/certificado-vale.webp" loading="lazy" class="gallery-img-fixed" aria-label="Capacitación constante de nuestro personal"
+                            alt="Capacitación constante de nuestro personal" data-bs-toggle="modal"
+                            data-bs-target="#modalImg3" style="cursor: pointer;">
+                    </div>
+                </div>
+
+                <!-- Imagen 4 -->
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card bg-dark border-0 shadow-sm">
+                        <img src="../img/galeria/liga-lags-1.webp" loading="lazy" class="gallery-img-fixed" aria-label="Compitiendo en Lig Lags 2025, clasificatoria regional"
+                            alt="Compitiendo en Lig Lags 2025, clasificatoria regional" data-bs-toggle="modal"
+                            data-bs-target="#modalImg4" style="cursor: pointer;">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Sección de Videos -->
+            <div class="row g-4">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="shadow-lg rounded overflow-hidden" style="max-width: 360px;">
+                        <video controls preload="metadata" poster="../img/galeria/latte-caliente-thumb.webp" aria-label="Distintas fases en la preparación de un latte caliente"
+                            style="width: 100%; height: auto; border-radius: 0.5rem;">
+                            <source src="../videos/latte-caliente.mp4" type="video/mp4">
+                            Tu navegador no soporta el video.
+                        </video>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="shadow-lg rounded overflow-hidden" style="max-width: 360px;">
+                        <video controls preload="metadata" poster="../img/galeria/latte-frio-thumb.webp"
+                        aria-label="Distintas fases en la preparación de un latte caliente" style="width: 100%; height: auto; border-radius: 0.5rem;">
+                            <source src="../videos/latte-frio.mp4" type="video/mp4">
+                            Tu navegador no soporta el video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-container container-fluid text-center py-3 justify-content-center">
+
+            <div class="row">
+                <!-- Información de contacto -->
+                <div class="footer-container__contact col-sm-12 col-md-4">
+                    <p>
+                        <a href="https://maps.app.goo.gl/2fDmWmGi7mYL5KEs9" target="_blank" rel="noopener noreferrer"
+                            class="text-decoration-none text-reset d-inline-flex align-items-center">
+                            <img src="../icons/map-pin.svg" loading="lazy" alt="Ubicación"
+                                style="width: 20px; margin-right: 3px;">
+                            Carmen Arias 18, Villa Amengual, Lago Verde.
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Texto y derechos de autor -->
+                <div class="footer-container__text col-sm-12 col-md-4">
+                    <p>&copy; 2025 Aroma Austral Café. Todos los derechos reservados.</p>
+
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="footer-container__social col-sm-12 col-md-4">
+                    <a href="https://www.facebook.com/aromaaustralcafeteria/" target="_blank">
+                        <img src="../icons/brand-facebook.svg" loading="lazy" alt="Facebook"
+                            class="footer-container__social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/aromaaustral.cafe/" target="_blank">
+                        <img src="../icons/brand-instagram.svg" loading="lazy" alt="Instagram"
+                            class="footer-container__social-icon">
+                    </a>
+                    <a href="https://www.tiktok.com/@aromaaustral.cafe" target="_blank">
+                        <img src="../icons/brand-tiktok.svg" alt="TikTok" loading="lazy"
+                            class="footer-container__social-icon">
+                    </a>
+                    <a href="https://wa.me/56971651085" target="_blank">
+                        <img src="../icons/brand-whatsapp.svg" alt="WhatsApp" loading="lazy"
+                            class="footer-container__social-icon">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/menu-nav.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Modales para imágenes -->
+    <div class="modal fade" id="modalImg1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark border-0">
+                <img src="../img/galeria/interior-capuccino.webp" loading="lazy" class="img-fluid rounded"
+                    alt="Capuccino recién servido en la barra">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalImg2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark border-0">
+                <img src="../img/galeria/interior-tarta.webp" loading="lazy" class="img-fluid rounded"
+                    alt="Trozo de tarta del día recién servido">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalImg3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark border-0">
+                <img src="../img/galeria/certificado-vale.webp" loading="lazy" class="img-fluid rounded"
+                    alt="Capacitación constante de nuestro personal">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalImg4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark border-0">
+                <img src="../img/galeria/liga-lags-1.webp" loading="lazy" class="img-fluid rounded"
+                    alt="Compitiendo en Lig Lags 2025, clasificatoria regional">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

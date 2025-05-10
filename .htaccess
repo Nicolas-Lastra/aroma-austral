@@ -1,0 +1,4 @@
+# Redirección 301 de /index.html a la raíz del sitio
+RewriteEngine On
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^index\.html$ / [R=301,L]
